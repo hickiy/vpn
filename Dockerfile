@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # 复制启动脚本
-COPY ./src/shell/start.sh /start.sh
+COPY ./start.sh /start.sh
 
 # 设置启动脚本权限
 RUN chmod +x /start.sh
